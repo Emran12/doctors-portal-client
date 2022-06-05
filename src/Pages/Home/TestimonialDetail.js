@@ -9,10 +9,12 @@ const TestimonialDetail = ({ testimonial }) => {
           <p>{description}</p>
         </div>
         <div className="flex justify-center items-center pb-6">
-          <figure class="px-10 pt-10">
-            <img src={img} alt="Shoes" class="rounded-xl" />
-          </figure>
-          <div className="mt-6">
+          <div class="avatar">
+            <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+              <img src={img} alt="" />
+            </div>
+          </div>
+          <div className="pl-6">
             <h1>{name}</h1>
             <p>{address}</p>
           </div>
