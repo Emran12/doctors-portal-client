@@ -5,7 +5,11 @@ const Footer = () => {
   return (
     <footer
       class="footer p-10 bg-white text-neutral-content mt-16 text-black"
-      style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }}
+      style={{
+        backgroundImage: `url(${bgImg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <div>
         <span class="footer-title">Services</span>

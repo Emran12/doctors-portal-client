@@ -1,5 +1,4 @@
 import React from "react";
-import Appointment from "./Appointment";
 import Banner from "./Banner";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
@@ -7,6 +6,7 @@ import Info from "./Info/Info";
 import Services from "./Services";
 import Testimonial from "./Testimonial";
 import Treatment from "./Treatment";
+import MakeAppointment from "./MakeAppointment";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
         <Services></Services>
         <Treatment></Treatment>
       </div>
-      <Appointment></Appointment>
+      <MakeAppointment></MakeAppointment>
       <Testimonial></Testimonial>
       <ContactUs></ContactUs>
       <Footer></Footer>

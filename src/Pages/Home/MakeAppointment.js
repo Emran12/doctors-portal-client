@@ -2,7 +2,7 @@ import React from "react";
 import doctor from "../../assets/images/doctor-small.png";
 import appointment from "../../assets/images/appointment.png";
 
-const Appointment = () => {
+const MakeAppointment = () => {
   return (
     <div>
       <div className="mt-24">
@@ -29,4 +29,4 @@ const Appointment = () => {
   );
 };
 
-export default Appointment;
+export default MakeAppointment;
