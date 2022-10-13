@@ -6,6 +6,7 @@ import {
 import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../Shared/Loading";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -121,6 +122,12 @@ const Login = () => {
               value="Login"
             />
           </form>
+          <p className="text-sm">
+            New to doctor's portal?{" "}
+            <Link to="/signup" className="text-primary">
+              Create an account
+            </Link>
+          </p>
           <div class="divider">OR</div>
           <button class="btn btn-outline" onClick={() => signInWithGoogle()}>
             Continue With Google
