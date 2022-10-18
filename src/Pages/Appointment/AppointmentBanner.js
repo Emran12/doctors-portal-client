@@ -7,10 +7,10 @@ import bgImg from "../../assets/images/bg.png";
 const AppointmentBanner = ({ date, setDate }) => {
   return (
     <div
-      class="hero min-h-screen bg-white"
+      className="hero min-h-screen bg-white"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
-      <div class="hero-content  flex-col lg:flex-row-reverse justify-between">
+      <div className="hero-content  flex-col lg:flex-row-reverse justify-between">
         <img
           width={"594px"}
           src={chair}

@@ -6,20 +6,20 @@ const Banner = () => {
   return (
     <div>
       <div
-        class="hero min-h-screen bg-white"
+        className="hero min-h-screen bg-white"
         style={{ backgroundImage: `url(${bgImg}) ` }}
       >
-        <div class="grid lg:grid-cols-2">
+        <div className="grid lg:grid-cols-2">
           <div className="px-16">
-            <h1 class="text-5xl font-bold ">Your New Smile Starts Here</h1>
-            <p class="py-6">
+            <h1 className="text-5xl font-bold ">Your New Smile Starts Here</h1>
+            <p className="py-6">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <button class="btn btn-primary">Get Started</button>
+            <button className="btn btn-primary">Get Started</button>
           </div>
-          <img src={chair} class="max-w-sm rounded-lg shadow-2xl" alt="" />
+          <img src={chair} className="max-w-sm rounded-lg shadow-2xl" alt="" />
         </div>
       </div>
     </div>

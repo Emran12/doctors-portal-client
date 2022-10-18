@@ -7,6 +7,7 @@ import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../Shared/Loading";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const Login = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -23,12 +24,14 @@ const Login = () => {
   let signInErrorMsg;
   const from = location.state?.from?.pathname || "/";
 
+  useEffect(() => {
+    if (user || gUser) {
+      navigate(from, { replace: true });
+    }
+  }, [user, gUser, from, navigate]);
+
   if (gLoading || loading) {
     return <Loading></Loading>;
-  }
-
-  if (user || gUser) {
-    navigate(from, { replace: true });
   }
 
   if (error || gError) {
@@ -127,8 +130,11 @@ const Login = () => {
               Create an account
             </Link>
           </p>
-          <div class="divider">OR</div>
-          <button class="btn btn-outline" onClick={() => signInWithGoogle()}>
+          <div className="divider">OR</div>
+          <button
+            className="btn btn-outline"
+            onClick={() => signInWithGoogle()}
+          >
             Continue With Google
           </button>
         </div>

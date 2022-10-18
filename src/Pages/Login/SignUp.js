@@ -156,8 +156,11 @@ const SignUp = () => {
                 Please Log in
               </Link>
             </p>
-            <div class="divider">OR</div>
-            <button class="btn btn-outline" onClick={() => signInWithGoogle()}>
+            <div className="divider">OR</div>
+            <button
+              className="btn btn-outline"
+              onClick={() => signInWithGoogle()}
+            >
               Continue With Google
             </button>
           </div>
